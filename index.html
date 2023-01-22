@@ -2,6 +2,8 @@
 <html> 
 
 <head>
+
+    <!-- Linking to stylesheet and setting title -->
     <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
     <title>hw-02</title>
@@ -13,18 +15,26 @@
 
         <div class="info">
             <h1>Dataset Types</h1>
-            <table>
+
+            <!-- Making a table of dataset types-->
+            <table class = "center">
+
+                <!-- Header row for table-->
                 <tr>
                     <th>Data</th>
                     <th>Link</th>
                     <th>Dataset Type</th>
                 </tr>
+
+                <!-- Airport row for table-->
                 <tr>
                     <td>Airports</td>
                     <td>
                         <a href="data/Airports.csv">Airports Data</a>
                     </td>
                     <td>Table</td>
+
+                <!-- Google row for table-->
                 </tr>
                 <tr>
                     <td>Google-Web</td>
@@ -32,6 +42,8 @@
                         <a href="data/Google-Web.txt">Google-Web Data</a>
                     </td>
                     <td>Network</td>
+
+                <!-- UFO row for table-->
                 </tr>
                 <tr>
                     <td>UFO.csv</td>
@@ -43,30 +55,125 @@
             </table>
         </div>
 
+        <!-- Making Data Type lists-->
         <div class="info">
             <h1>Data Types</h1>
-            <h2>Airports</h2>
-            unordered list
-            <h2>Google-Web</h2>
-            unordered list
-            <h2>UFO</h2>
-            unordered list
-        </div>
 
+            <!-- Airport datatypes-->
+            <h2>Airports</h2>
+
+                    <!-- List of items and attributes-->
+                    <ul class = "info"> 
+                        <li> Items (Rows) </li>
+                            <ul class = "info">
+                                <li> Airports </li>
+                            </ul>
+                        <li> Attributes (Columns) </li>
+                            <ul class = "info">
+                                <li> Airport Names </li>
+                                <li> Latitude </li>
+                                <li> Longitude </li>
+                            </ul>
+                    </ul>
+
+            <!-- Google datatypes -->
+            <h2>Google-Web</h2>
+
+                    <!-- List for Items, Nodes, and attributes -->
+                    <ul class = "info"> 
+                        <li> Items (Nodes) </li>
+                        <li> Links (Edges) </li>
+                        <li> Attributes </li>
+                        <ul class = "info"> 
+                            <li> From Node ID </li>
+                            <li> To Node ID </li>
+                        </ul>
+                    </ul>
+
+            <!-- UFO Datatypes-->
+            <h2>UFO</h2>
+
+                    <!-- List for items and attributes -->
+                   <ul class = "info"> 
+                        <li> Items (Rows) </li>
+                            <ul class = "info">
+                                <li> UFO Sightings </li>
+                            </ul>
+                        <li> Attributes (Columns) </li>
+                            <ul class = "info">
+                                <li> Date Time </li>
+                                <li> City </li>
+                                <li> State </li>
+                                <li> Country </li>
+                                <li> Shape </li>
+                                <li> Duration (Seconds) </li>
+                            </ul>
+                    </ul> 
+        
+        </div>
     </div>
 
+
+    <!-- New Div for flexbox -->
     <div id="task-abstraction">
         <h1>Task Abstraction</h1>
-        flexbox
+       
+
+       <!-- creating container with two items / columns -->
+        <ul class="flex-container">
+            <li class="flex-item">
+                <img src="img/vis1.png">
+                <p> Text Here </p>
+            </li>
+            <li class="flex-item">
+                <img src="img/vis2.png">
+                <p> Text Here </p>
+            </li>
+        </ul>
     </div>
 
+    <!-- new div for alternating SVGs -->
     <div id="decoration">
-        svgs
+        <table class = "center">
+            <tr>
+
+                <!-- Table cells, each with an alternating svg shape object -->
+                <td>
+                    <svg> <circle/> </svg>
+                </td>
+                <td>
+                    <svg> <rect/> </svg>
+                </td>
+                <td> 
+                    <svg> <circle/> </svg>
+                </td>
+                <td> 
+                    <svg> <rect/> </svg>
+                </td>
+                <td> 
+                    <svg> <circle/> </svg>
+                </td>
+            </tr>
+        </table>
     </div>
 
-    <h3>Acknowledgements</h1>
+    <!-- List of acknowledgments section -->
+    <h3>Acknowledgements </h3>
     <div>
-        list of resources
+        <ul>
+            <li> https://www.w3schools.com/html/html_tables.asp </li>
+            <li> https://www.w3schools.com/html/html_links.asp </li>
+            <li> https://www.w3schools.com/cssref/css_websafe_fonts.php </li>
+            <li> https://www.w3schools.com/html/html_links.asp </li>
+            <li> https://www.w3schools.com/css/css_howto.asp </li>
+            <li> http://www.corelangs.com/css/table/css-tables.html </li>
+            <li> https://www.w3schools.com/html/html_filepaths.asp </li>
+            <li> https://www.w3schools.com/howto/howto_css_table_center.asp </li>
+            <li> https://www.w3schools.com/html/html_lists_unordered.asp </li>
+            <li> https://www.html.am/html-codes/tables/table-border.cfm#:~:text=You%20can%20get%20a%20quick,border%2C%20use%20a%20greater%20number </li>
+            <li> https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology </li> 
+            <li> https://www.w3schools.com/graphics/svg_intro.asp </li>
+        </ul>
     </div>
 </body>
 
