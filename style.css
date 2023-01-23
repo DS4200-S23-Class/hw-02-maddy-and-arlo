@@ -11,7 +11,8 @@ h1 {text-align: center;}
 /* Table Styling */
 th {background-color: lightblue;}
 tr {border-bottom: 1px solid grey}
-.center { margin-left: auto; margin-right: auto; border-collapse: collapse;}			
+.center { margin-left: auto; margin-right: auto; border-collapse: collapse; width: 80%; 
+          text-align: center}			
 
 /* Data Types Styling */
 h2 {text-align: left;}
@@ -39,6 +40,7 @@ h2 {text-align: left;}
   padding: 0;
   margin: 0;
   list-style: none;
+  align-items: stretch;
 }
 .flex-item {
   background: lightgrey;
@@ -52,11 +54,42 @@ h2 {text-align: left;}
 }
 
 /* Decoration Styling SVG */
-.svg-center { margin-left: auto; margin-right: auto;} 
-circle {cx: 70px; cy: 70px; r: 70px; fill: darkred; fill-opacity: .5;}
+.flex-container2 {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: center;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;}
 
-rect {width: 50px; height: 150px; fill: cyan; stroke: pink; stroke-width: 15px;}
+.flex-item2 {
+  background: sandybrown;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  flex: 1;
+  }
+
+circle {cx: 70px; cy: 70px; r: 70px; fill: darkred; fill-opacity: .5;}
+.circle {justify-content: center; align-items: center}
+
+rect {width: 250px; height: 150px; fill: cyan; stroke: pink; stroke-width: 10px;}
+
 
 /* Acknowledgements Section */
 h3 {text-align: center;}
-ul {text-align: center; list-style-position: inside; }
+ul {text-align: center; list-style-position: inside; } 
